@@ -1,0 +1,4987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <actions hook="false" hook_all="false" />
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <auto_zoom_to_fit_all>true</auto_zoom_to_fit_all>
+  <background_color>
+    <color name="Background_main1" red="39" green="43" blue="51" />
+  </background_color>
+  <boy_version>1.7.9.202506131913</boy_version>
+  <foreground_color>
+    <color name="MCS Dark Gray" red="10" green="10" blue="10" />
+  </foreground_color>
+  <grid_space>6</grid_space>
+  <height>960</height>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <name>Flight Data</name>
+  <rules />
+  <scripts />
+  <show_close_button>true</show_close_button>
+  <show_edit_range>true</show_edit_range>
+  <show_grid>false</show_grid>
+  <show_ruler>false</show_ruler>
+  <snap_to_geometry>true</snap_to_geometry>
+  <widget_type>Display</widget_type>
+  <width>1900</width>
+  <wuid>2da4dada:138bb0b2666:-7ff6</wuid>
+  <x>0</x>
+  <y>0</y>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color red="39" green="43" blue="51" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>0</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="39" green="43" blue="51" />
+    </foreground_color>
+    <group_name />
+    <height>62</height>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <name>Linking Container</name>
+    <opi_file>top-bar.opi</opi_file>
+    <resize_behaviour>0</resize_behaviour>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip />
+    <visible>true</visible>
+    <widget_type>Linking Container</widget_type>
+    <width>903</width>
+    <wuid>427ded89:19805f95ee6:-73b5</wuid>
+    <x>-1</x>
+    <y>-1</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="15" style="1" pixels="false">Header 2</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>41</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Video Feeds</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>219</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-722d</wuid>
+    <x>30</x>
+    <y>60</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>1</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>Rectangle_2</name>
+    <pv_name />
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Rectangle</widget_type>
+    <width>1000</width>
+    <wuid>427ded89:19805f95ee6:-719f</wuid>
+    <x>429</x>
+    <y>423</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>750</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>Rectangle_1</name>
+    <pv_name />
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Rectangle</widget_type>
+    <width>1</width>
+    <wuid>427ded89:19805f95ee6:-7197</wuid>
+    <x>429</x>
+    <y>60</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="15" style="1" pixels="false">Header 2</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>41</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Operations panel</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>219</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-70dd</wuid>
+    <x>455</x>
+    <y>60</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_20</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_E2</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7090</wuid>
+    <x>564</x>
+    <y>188</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_59</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-708f</wuid>
+    <x>656</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_60</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_E2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-708e</wuid>
+    <x>464</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_61</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_E1</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-708d</wuid>
+    <x>464</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </border_color>
+    <border_style>14</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Helvetica" height="11" style="0" pixels="false" />
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_62</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>Current</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>73</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-708c</wuid>
+    <x>560</x>
+    <y>109</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_1</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_E1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-708b</wuid>
+    <x>564</x>
+    <y>157</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_2</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_E3</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>23</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-708a</wuid>
+    <x>564</x>
+    <y>219</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_63</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_E3</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7089</wuid>
+    <x>464</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_3</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_E4</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1E-06</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7088</wuid>
+    <x>564</x>
+    <y>250</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_64</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_E4</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7087</wuid>
+    <x>464</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_5</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_E2</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-705c</wuid>
+    <x>863</x>
+    <y>188</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_66</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-705b</wuid>
+    <x>955</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_67</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_E2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-705a</wuid>
+    <x>763</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_68</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_E1</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7059</wuid>
+    <x>763</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </border_color>
+    <border_style>14</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Helvetica" height="11" style="0" pixels="false" />
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_69</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>Voltage</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>73</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7058</wuid>
+    <x>859</x>
+    <y>109</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_6</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_E1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>200</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7057</wuid>
+    <x>863</x>
+    <y>157</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_7</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_E3</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1/2</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7056</wuid>
+    <x>863</x>
+    <y>219</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_70</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_E3</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7055</wuid>
+    <x>763</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_8</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_E4</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1E-06</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7054</wuid>
+    <x>863</x>
+    <y>250</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_71</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_E4</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7053</wuid>
+    <x>763</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_9</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_C2</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7017</wuid>
+    <x>564</x>
+    <y>310</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_73</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_C2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7015</wuid>
+    <x>464</x>
+    <y>309</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_74</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_C1</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7014</wuid>
+    <x>464</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_10</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_C1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>43</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7013</wuid>
+    <x>564</x>
+    <y>279</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_11</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_C3</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>15</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7012</wuid>
+    <x>564</x>
+    <y>341</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_75</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_C3</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7011</wuid>
+    <x>464</x>
+    <y>340</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_12</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/I_C4</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1E-06</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-7010</wuid>
+    <x>564</x>
+    <y>372</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_76</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>I_C4</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-700f</wuid>
+    <x>464</x>
+    <y>371</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_13</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_C2</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ffa</wuid>
+    <x>863</x>
+    <y>310</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_78</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_C2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff8</wuid>
+    <x>763</x>
+    <y>309</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_79</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_C1</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff7</wuid>
+    <x>763</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_14</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_C1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>250</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff6</wuid>
+    <x>863</x>
+    <y>279</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_15</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_C3</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1/2</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff5</wuid>
+    <x>863</x>
+    <y>341</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_80</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_C3</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff4</wuid>
+    <x>763</x>
+    <y>340</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_16</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/V_C4</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1E-06</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff3</wuid>
+    <x>863</x>
+    <y>372</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_81</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>V_C4</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6ff2</wuid>
+    <x>763</x>
+    <y>371</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_17</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/a_y</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6fa1</wuid>
+    <x>1126</x>
+    <y>188</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_82</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>m/s2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6fa0</wuid>
+    <x>1218</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_83</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>a_y</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f9f</wuid>
+    <x>1026</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_84</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>a_x</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f9e</wuid>
+    <x>1026</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </border_color>
+    <border_style>14</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Helvetica" height="11" style="0" pixels="false" />
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_85</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>Acceleration</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>89</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f9d</wuid>
+    <x>1122</x>
+    <y>109</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_18</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/a_x</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>QPSK</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f9c</wuid>
+    <x>1126</x>
+    <y>157</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_19</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/a_z</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1/2</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f9b</wuid>
+    <x>1126</x>
+    <y>219</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_86</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>a_z</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f9a</wuid>
+    <x>1026</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_20</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/g_x</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1E-06</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f99</wuid>
+    <x>1126</x>
+    <y>250</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_87</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>g_x</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f98</wuid>
+    <x>1026</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_21</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/g_z</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f97</wuid>
+    <x>1126</x>
+    <y>310</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_88</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>°/s</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f96</wuid>
+    <x>1218</x>
+    <y>309</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_89</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>g_z</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f95</wuid>
+    <x>1026</x>
+    <y>309</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_90</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>g_y</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f94</wuid>
+    <x>1026</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_22</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/g_y</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>QPSK</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f93</wuid>
+    <x>1126</x>
+    <y>279</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_25</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/p_box</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>12.5</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f52</wuid>
+    <x>1388</x>
+    <y>188</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_93</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text> bar</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f51</wuid>
+    <x>1480</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_94</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>p box</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f50</wuid>
+    <x>1288</x>
+    <y>187</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_95</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>T liq</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f4f</wuid>
+    <x>1288</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </border_color>
+    <border_style>14</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Helvetica" height="11" style="0" pixels="false" />
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_96</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>ENV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>73</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f4e</wuid>
+    <x>1384</x>
+    <y>109</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_26</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/T_liq</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>QPSK</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f4d</wuid>
+    <x>1388</x>
+    <y>157</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_27</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/RH_box</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1/2</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f4c</wuid>
+    <x>1388</x>
+    <y>219</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_97</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>RH box</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f4b</wuid>
+    <x>1288</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_28</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>/myproject/T_box</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>1E-06</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f4a</wuid>
+    <x>1388</x>
+    <y>250</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_98</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>T box</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f49</wuid>
+    <x>1288</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_101</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>H2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>95</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f45</wuid>
+    <x>1288</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color name="Header MainColor" red="255" green="255" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="10" style="0" pixels="false">MCSLabel value</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>22</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_30</name>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name />
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_lohi>true</show_lohi>
+    <show_units>false</show_units>
+    <text>QPSK</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>85</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6f44</wuid>
+    <x>1388</x>
+    <y>279</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="15" style="1" pixels="false">Header 2</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>41</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_104</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Live Trend Plots</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>219</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6e2f</wuid>
+    <x>464</x>
+    <y>446</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>300</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>Rectangle_2</name>
+    <pv_name />
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Rectangle</widget_type>
+    <width>1</width>
+    <wuid>427ded89:19805f95ee6:-6c9d</wuid>
+    <x>715</x>
+    <y>110</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>300</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>Rectangle_3</name>
+    <pv_name />
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Rectangle</widget_type>
+    <width>1</width>
+    <wuid>427ded89:19805f95ee6:-6c91</wuid>
+    <x>994</x>
+    <y>110</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="TM_Text" red="255" green="255" blue="255" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>300</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>Rectangle_4</name>
+    <pv_name />
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Rectangle</widget_type>
+    <width>1</width>
+    <wuid>427ded89:19805f95ee6:-6c8a</wuid>
+    <x>1268</x>
+    <y>110</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Arial" height="9" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <items>
+      <s>/myproject/I_E1</s>
+      <s>/myproject/I_E2</s>
+    </items>
+    <items_from_pv>false</items_from_pv>
+    <name>Combo Box</name>
+    <pv_name>loc://trace2PV("sim://sine(0,100,100,1)")</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Combo Box</widget_type>
+    <width>250</width>
+    <wuid>427ded89:19805f95ee6:-6bf2</wuid>
+    <x>580</x>
+    <y>487</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Arial" height="9" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <items>
+      <s>/myproject/I_E1</s>
+      <s>/myproject/I_E2</s>
+    </items>
+    <items_from_pv>false</items_from_pv>
+    <name>Combo Box_1</name>
+    <pv_name>loc://trace3PV("sim://sine(0,100,100,2)")</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Combo Box</widget_type>
+    <width>250</width>
+    <wuid>427ded89:19805f95ee6:-6bf1</wuid>
+    <x>841</x>
+    <y>487</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <axis_0_auto_scale>true</axis_0_auto_scale>
+    <axis_0_auto_scale_threshold>0.0</axis_0_auto_scale_threshold>
+    <axis_0_axis_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </axis_0_axis_color>
+    <axis_0_axis_title>Time</axis_0_axis_title>
+    <axis_0_dash_grid_line>true</axis_0_dash_grid_line>
+    <axis_0_grid_color>
+      <color name="Background_TMlist" red="192" green="192" blue="192" />
+    </axis_0_grid_color>
+    <axis_0_log_scale>false</axis_0_log_scale>
+    <axis_0_maximum>30.0</axis_0_maximum>
+    <axis_0_minimum>0.0</axis_0_minimum>
+    <axis_0_scale_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </axis_0_scale_font>
+    <axis_0_scale_format />
+    <axis_0_show_grid>false</axis_0_show_grid>
+    <axis_0_time_format>4</axis_0_time_format>
+    <axis_0_title_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="1" pixels="false">Default Bold</opifont.name>
+    </axis_0_title_font>
+    <axis_0_visible>true</axis_0_visible>
+    <axis_1_auto_scale>true</axis_1_auto_scale>
+    <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
+    <axis_1_axis_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </axis_1_axis_color>
+    <axis_1_axis_title>Value</axis_1_axis_title>
+    <axis_1_dash_grid_line>true</axis_1_dash_grid_line>
+    <axis_1_grid_color>
+      <color name="Background_TMlist" red="192" green="192" blue="192" />
+    </axis_1_grid_color>
+    <axis_1_log_scale>false</axis_1_log_scale>
+    <axis_1_maximum>100.0</axis_1_maximum>
+    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_scale_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </axis_1_scale_font>
+    <axis_1_scale_format />
+    <axis_1_show_grid>false</axis_1_show_grid>
+    <axis_1_time_format>0</axis_1_time_format>
+    <axis_1_title_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="1" pixels="false">Default Bold</opifont.name>
+    </axis_1_title_font>
+    <axis_1_visible>true</axis_1_visible>
+    <axis_count>2</axis_count>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="128" blue="0" />
+    </foreground_color>
+    <height>271</height>
+    <name>Graph0</name>
+    <plot_area_background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </plot_area_background_color>
+    <pv_name />
+    <pv_value />
+    <rules>
+      <rule name="Change Trace PV " prop_id="trace_0_y_pv" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace2PV("sim://sine(0,100,100,1)")</pv>
+      </rule>
+      <rule name="Update Legend " prop_id="trace_0_name" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace2PV("sim://sine(0,100,100,1)")</pv>
+      </rule>
+      <rule name="change trace1" prop_id="trace_1_y_pv" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace3PV("sim://sine(0,100,100,2)")</pv>
+      </rule>
+      <rule name="Update Legend1" prop_id="trace_1_name" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace3PV("sim://sine(0,100,100,2)")</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_legend>true</show_legend>
+    <show_plot_area_border>false</show_plot_area_border>
+    <show_toolbar>false</show_toolbar>
+    <title />
+    <title_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="1" pixels="false">Default Bold</opifont.name>
+    </title_font>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <trace_0_anti_alias>true</trace_0_anti_alias>
+    <trace_0_buffer_size>100</trace_0_buffer_size>
+    <trace_0_concatenate_data>true</trace_0_concatenate_data>
+    <trace_0_line_width>2</trace_0_line_width>
+    <trace_0_name />
+    <trace_0_plot_mode>0</trace_0_plot_mode>
+    <trace_0_point_size>4</trace_0_point_size>
+    <trace_0_point_style>3</trace_0_point_style>
+    <trace_0_trace_color>
+      <color name="Green" red="114" green="201" blue="144" />
+    </trace_0_trace_color>
+    <trace_0_trace_type>0</trace_0_trace_type>
+    <trace_0_update_delay>0</trace_0_update_delay>
+    <trace_0_update_mode>0</trace_0_update_mode>
+    <trace_0_visible>true</trace_0_visible>
+    <trace_0_x_axis_index>0</trace_0_x_axis_index>
+    <trace_0_x_pv />
+    <trace_0_x_pv_value />
+    <trace_0_y_axis_index>1</trace_0_y_axis_index>
+    <trace_0_y_pv />
+    <trace_0_y_pv_value />
+    <trace_1_anti_alias>true</trace_1_anti_alias>
+    <trace_1_buffer_size>100</trace_1_buffer_size>
+    <trace_1_concatenate_data>true</trace_1_concatenate_data>
+    <trace_1_line_width>2</trace_1_line_width>
+    <trace_1_name>$(trace_1_y_pv)</trace_1_name>
+    <trace_1_plot_mode>0</trace_1_plot_mode>
+    <trace_1_point_size>4</trace_1_point_size>
+    <trace_1_point_style>0</trace_1_point_style>
+    <trace_1_trace_color>
+      <color name="Yellow" red="226" green="192" blue="141" />
+    </trace_1_trace_color>
+    <trace_1_trace_type>0</trace_1_trace_type>
+    <trace_1_update_delay>100</trace_1_update_delay>
+    <trace_1_update_mode>0</trace_1_update_mode>
+    <trace_1_visible>true</trace_1_visible>
+    <trace_1_x_axis_index>0</trace_1_x_axis_index>
+    <trace_1_x_pv />
+    <trace_1_x_pv_value />
+    <trace_1_y_axis_index>1</trace_1_y_axis_index>
+    <trace_1_y_pv />
+    <trace_1_y_pv_value />
+    <trace_count>2</trace_count>
+    <transparent>false</transparent>
+    <trigger_pv />
+    <trigger_pv_value />
+    <visible>true</visible>
+    <widget_type>XY Graph</widget_type>
+    <width>552</width>
+    <wuid>427ded89:19805f95ee6:-6bf0</wuid>
+    <x>464</x>
+    <y>527</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </border_color>
+    <border_style>14</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>18</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Battery Box 1_8</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Custom Graph 1</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>106</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6bef</wuid>
+    <x>455</x>
+    <y>488</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </border_color>
+    <border_style>14</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>18</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Battery Box 1_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Custom Graph 2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>111</width>
+    <wrap_words>false</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6be1</wuid>
+    <x>1141</x>
+    <y>492</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_105</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68d7</wuid>
+    <x>656</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_106</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68cc</wuid>
+    <x>656</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_107</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68cb</wuid>
+    <x>656</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_108</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68b2</wuid>
+    <x>656</x>
+    <y>309</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_109</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68b1</wuid>
+    <x>656</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_110</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68b0</wuid>
+    <x>656</x>
+    <y>371</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_111</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mA</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68af</wuid>
+    <x>656</x>
+    <y>340</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_112</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-68a7</wuid>
+    <x>955</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_113</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-689c</wuid>
+    <x>955</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_114</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-689b</wuid>
+    <x>955</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_115</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-688a</wuid>
+    <x>955</x>
+    <y>309</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_116</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6889</wuid>
+    <x>955</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_117</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6888</wuid>
+    <x>955</x>
+    <y>371</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_118</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>mV</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6887</wuid>
+    <x>955</x>
+    <y>340</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_119</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>m/s2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-687f</wuid>
+    <x>1218</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_121</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>m/s2</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6873</wuid>
+    <x>1218</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_122</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>°/s</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6868</wuid>
+    <x>1218</x>
+    <y>278</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_123</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>°/s</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6863</wuid>
+    <x>1218</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_124</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text> °C</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-685b</wuid>
+    <x>1480</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_125</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text> %</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-6856</wuid>
+    <x>1480</x>
+    <y>218</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_126</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>°C</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-684b</wuid>
+    <x>1480</x>
+    <y>249</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Arial" height="11" style="0" pixels="false">MCSTOPBAR</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </foreground_color>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_127</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text> ppm</text>
+    <tooltip />
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>60</width>
+    <wrap_words>true</wrap_words>
+    <wuid>427ded89:19805f95ee6:-684a</wuid>
+    <x>1480</x>
+    <y>280</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.webbrowser" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="192" green="192" blue="192" />
+    </border_color>
+    <border_style>1</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>212</height>
+    <name>Web Browser</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_toolbar>true</show_toolbar>
+    <tooltip />
+    <url />
+    <visible>true</visible>
+    <widget_type>Web Browser</widget_type>
+    <width>362</width>
+    <wuid>209b2e9c:1987a9e2692:-7cbc</wuid>
+    <x>20</x>
+    <y>108</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.webbrowser" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="192" green="192" blue="192" />
+    </border_color>
+    <border_style>1</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>212</height>
+    <name>Web Browser_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_toolbar>true</show_toolbar>
+    <tooltip />
+    <url />
+    <visible>true</visible>
+    <widget_type>Web Browser</widget_type>
+    <width>362</width>
+    <wuid>209b2e9c:1987a9e2692:-7cb2</wuid>
+    <x>20</x>
+    <y>341</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.webbrowser" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="192" green="192" blue="192" />
+    </border_color>
+    <border_style>1</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>212</height>
+    <name>Web Browser_2</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_toolbar>true</show_toolbar>
+    <tooltip />
+    <url />
+    <visible>true</visible>
+    <widget_type>Web Browser</widget_type>
+    <width>362</width>
+    <wuid>209b2e9c:1987a9e2692:-7cad</wuid>
+    <x>20</x>
+    <y>578</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <axis_0_auto_scale>true</axis_0_auto_scale>
+    <axis_0_auto_scale_threshold>0.0</axis_0_auto_scale_threshold>
+    <axis_0_axis_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </axis_0_axis_color>
+    <axis_0_axis_title>Time</axis_0_axis_title>
+    <axis_0_dash_grid_line>true</axis_0_dash_grid_line>
+    <axis_0_grid_color>
+      <color name="Background_TMlist" red="192" green="192" blue="192" />
+    </axis_0_grid_color>
+    <axis_0_log_scale>false</axis_0_log_scale>
+    <axis_0_maximum>30.0</axis_0_maximum>
+    <axis_0_minimum>0.0</axis_0_minimum>
+    <axis_0_scale_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </axis_0_scale_font>
+    <axis_0_scale_format />
+    <axis_0_show_grid>false</axis_0_show_grid>
+    <axis_0_time_format>3</axis_0_time_format>
+    <axis_0_title_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="1" pixels="false">Default Bold</opifont.name>
+    </axis_0_title_font>
+    <axis_0_visible>true</axis_0_visible>
+    <axis_1_auto_scale>true</axis_1_auto_scale>
+    <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
+    <axis_1_axis_color>
+      <color name="TM_label_text" red="197" green="211" blue="236" />
+    </axis_1_axis_color>
+    <axis_1_axis_title>Value</axis_1_axis_title>
+    <axis_1_dash_grid_line>true</axis_1_dash_grid_line>
+    <axis_1_grid_color>
+      <color name="Background_TMlist" red="192" green="192" blue="192" />
+    </axis_1_grid_color>
+    <axis_1_log_scale>false</axis_1_log_scale>
+    <axis_1_maximum>100.0</axis_1_maximum>
+    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_scale_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="0" pixels="false">Default</opifont.name>
+    </axis_1_scale_font>
+    <axis_1_scale_format />
+    <axis_1_show_grid>false</axis_1_show_grid>
+    <axis_1_time_format>0</axis_1_time_format>
+    <axis_1_title_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="1" pixels="false">Default Bold</opifont.name>
+    </axis_1_title_font>
+    <axis_1_visible>true</axis_1_visible>
+    <axis_count>2</axis_count>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="128" blue="0" />
+    </foreground_color>
+    <height>288</height>
+    <name>Graph0_2</name>
+    <plot_area_background_color>
+      <color name="Background_main1" red="39" green="43" blue="51" />
+    </plot_area_background_color>
+    <pv_name />
+    <pv_value />
+    <rules>
+      <rule name="Change Trace PV " prop_id="trace_0_y_pv" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace0PV("/YSS/SIMULATOR/Theta")</pv>
+      </rule>
+      <rule name="Update Legend " prop_id="trace_0_name" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace0PV("/YSS/SIMULATOR/Theta")</pv>
+      </rule>
+      <rule name="change trace1" prop_id="trace_1_y_pv" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace1PV("/YSS/SIMULATOR/Psi")</pv>
+      </rule>
+      <rule name="Update Legend1" prop_id="trace_1_name" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0</value>
+        </exp>
+        <pv trig="true">loc://trace1PV("/YSS/SIMULATOR/Psi")</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_legend>true</show_legend>
+    <show_plot_area_border>false</show_plot_area_border>
+    <show_toolbar>false</show_toolbar>
+    <title />
+    <title_font>
+      <opifont.name fontName="Liberation Sans" height="11" style="1" pixels="false">Default Bold</opifont.name>
+    </title_font>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <trace_0_anti_alias>true</trace_0_anti_alias>
+    <trace_0_buffer_size>100</trace_0_buffer_size>
+    <trace_0_concatenate_data>true</trace_0_concatenate_data>
+    <trace_0_line_width>2</trace_0_line_width>
+    <trace_0_name />
+    <trace_0_plot_mode>0</trace_0_plot_mode>
+    <trace_0_point_size>4</trace_0_point_size>
+    <trace_0_point_style>3</trace_0_point_style>
+    <trace_0_trace_color>
+      <color name="Green" red="114" green="201" blue="144" />
+    </trace_0_trace_color>
+    <trace_0_trace_type>0</trace_0_trace_type>
+    <trace_0_update_delay>0</trace_0_update_delay>
+    <trace_0_update_mode>0</trace_0_update_mode>
+    <trace_0_visible>true</trace_0_visible>
+    <trace_0_x_axis_index>0</trace_0_x_axis_index>
+    <trace_0_x_pv />
+    <trace_0_x_pv_value />
+    <trace_0_y_axis_index>1</trace_0_y_axis_index>
+    <trace_0_y_pv />
+    <trace_0_y_pv_value />
+    <trace_1_anti_alias>true</trace_1_anti_alias>
+    <trace_1_buffer_size>100</trace_1_buffer_size>
+    <trace_1_concatenate_data>true</trace_1_concatenate_data>
+    <trace_1_line_width>2</trace_1_line_width>
+    <trace_1_name>$(trace_1_y_pv)</trace_1_name>
+    <trace_1_plot_mode>0</trace_1_plot_mode>
+    <trace_1_point_size>4</trace_1_point_size>
+    <trace_1_point_style>0</trace_1_point_style>
+    <trace_1_trace_color>
+      <color name="Blue" red="56" green="117" blue="237" />
+    </trace_1_trace_color>
+    <trace_1_trace_type>0</trace_1_trace_type>
+    <trace_1_update_delay>100</trace_1_update_delay>
+    <trace_1_update_mode>0</trace_1_update_mode>
+    <trace_1_visible>true</trace_1_visible>
+    <trace_1_x_axis_index>0</trace_1_x_axis_index>
+    <trace_1_x_pv />
+    <trace_1_x_pv_value />
+    <trace_1_y_axis_index>1</trace_1_y_axis_index>
+    <trace_1_y_pv />
+    <trace_1_y_pv_value />
+    <trace_count>2</trace_count>
+    <transparent>false</transparent>
+    <trigger_pv />
+    <trigger_pv_value />
+    <visible>true</visible>
+    <widget_type>XY Graph</widget_type>
+    <width>877</width>
+    <wuid>3a102929:19895a88ee3:-789e</wuid>
+    <x>1131</x>
+    <y>527</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Arial" height="9" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <items>
+      <s>/myproject/V_E3</s>
+    </items>
+    <items_from_pv>false</items_from_pv>
+    <name>Combo Box_4</name>
+    <pv_name>loc://trace0PV("/YSS/SIMULATOR/Theta")</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Combo Box</widget_type>
+    <width>178</width>
+    <wuid>3a102929:19895a88ee3:-789d</wuid>
+    <x>1278</x>
+    <y>488</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Arial" height="9" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <items>
+      <s>/myproject/V_E4</s>
+    </items>
+    <items_from_pv>false</items_from_pv>
+    <name>Combo Box_5</name>
+    <pv_name>loc://trace1PV("/YSS/SIMULATOR/Psi")</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Combo Box</widget_type>
+    <width>157</width>
+    <wuid>3a102929:19895a88ee3:-789c</wuid>
+    <x>1479</x>
+    <y>488</y>
+  </widget>
+</display>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpaceSystem name="myproject" xmlns="http://www.omg.org/spec/XTCE/20180204" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.omg.org/spec/XTCE/20180204 https://www.omg.org/spec/XTCE/20180204/SpaceSystem.xsd">
+	<TelemetryMetaData>
+		<ParameterTypeSet>
+			<AggregateParameterType name="CCSDS_Packet_ID_Type">
+				<MemberList>
+					<Member name="Version" typeRef="CCSDS_Version_Type" />
+					<Member name="Type" typeRef="CCSDS_Type_Type" />
+					<Member name="SecHdrFlag" typeRef="CCSDS_Sec_Hdr_Flag_Type" />
+					<Member name="APID" typeRef="CCSDS_APID_Type" />
+				</MemberList>
+			</AggregateParameterType>
+			<IntegerParameterType name="CCSDS_Version_Type" signed="false">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="3" />
+			</IntegerParameterType>
+			<BooleanParameterType name="CCSDS_Type_Type" zeroStringValue="TM" oneStringValue="TC">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="1" />
+			</BooleanParameterType>
+			<BooleanParameterType name="CCSDS_Sec_Hdr_Flag_Type" zeroStringValue="NotPresent" oneStringValue="Present">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="1" />
+			</BooleanParameterType>
+			<IntegerParameterType name="CCSDS_APID_Type" signed="false">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="11" />
+			</IntegerParameterType>
+			<AggregateParameterType name="CCSDS_Packet_Sequence_Type">
+				<MemberList>
+					<Member name="GroupFlags" typeRef="CCSDS_Group_Flags_Type" />
+					<Member name="Count" typeRef="CCSDS_Source_Sequence_Count_Type" />
+				</MemberList>
+			</AggregateParameterType>
+			<EnumeratedParameterType name="CCSDS_Group_Flags_Type">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="2" />
+				<EnumerationList>
+					<Enumeration value="0" label="Continuation" />
+					<Enumeration value="1" label="First" />
+					<Enumeration value="2" label="Last" />
+					<Enumeration value="3" label="Standalone" />
+				</EnumerationList>
+			</EnumeratedParameterType>
+			<IntegerParameterType name="CCSDS_Source_Sequence_Count_Type" signed="false">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="14" />
+			</IntegerParameterType>
+			<IntegerParameterType name="CCSDS_Packet_Length_Type" signed="false" initialValue="0">
+				<UnitSet>
+					<Unit description="Size">Octets</Unit>
+				</UnitSet>
+				<IntegerDataEncoding sizeInBits="16" />
+			</IntegerParameterType>
+			<IntegerParameterType name="uint32_t" signed="false">
+				<UnitSet />
+				<IntegerDataEncoding encoding="unsigned" sizeInBits="32" />
+			</IntegerParameterType>
+			<FloatParameterType name="float_t">
+				<UnitSet />
+				<FloatDataEncoding sizeInBits="32" />
+			</FloatParameterType>
+			<FloatParameterType name="float_T_liq">
+				<UnitSet>
+					<Unit description="Temperature">°C</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="0" maxInclusive="28"/>
+						<CriticalRange minInclusive="0" maxInclusive="30"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>				
+			</FloatParameterType>
+			<FloatParameterType name="float_p_box">
+				<UnitSet>
+					<Unit description="Pressure">bar</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="0" maxInclusive="0.8"/>
+						<CriticalRange minInclusive="0" maxInclusive="1.05"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_RH_box">
+				<UnitSet>
+					<Unit description="Relative Humidity"> % RH</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+			</FloatParameterType>
+			<FloatParameterType name="float_T_box">
+				<UnitSet>
+					<Unit description="Temperature">°C</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="35"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_H_2">
+				<UnitSet>
+					<Unit description=" ppm"> ppm</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<WarningRange minInclusive="0" maxInclusive="4000"/>
+						<CriticalRange minInclusive="0" maxInclusive="10000"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_a_x">
+				<UnitSet>
+					<Unit description="magnitude">g</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="-1.5" maxInclusive="1.5"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_a_y">
+				<UnitSet>
+					<Unit description="magnitude">g</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="-1.5" maxInclusive="1.5"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_a_z">
+				<UnitSet>
+					<Unit description="magnitude">g</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="-1.5" maxInclusive="1.5"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_g_x">
+				<UnitSet>
+					<Unit description="magnitude">g</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="-1.5" maxInclusive="1.5"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_g_y">
+				<UnitSet>
+					<Unit description="magnitude">g</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="-1.5" maxInclusive="1.5"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_g_z">
+				<UnitSet>
+					<Unit description="magnitude">g</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="-1.5" maxInclusive="1.5"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_E1">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_E2">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_E3">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_E4">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_C1">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_C2">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_C3">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_I_C4">
+				<UnitSet>
+					<Unit description="Current">A</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="2.2"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_E1">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_E2">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_E3">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_E4">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_C1">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_C2">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_C3">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<FloatParameterType name="float_V_C4">
+				<UnitSet>
+					<Unit description="Voltage">V</Unit>
+				</UnitSet>
+				<FloatDataEncoding sizeInBits="32" />
+				<DefaultAlarm>
+					<StaticAlarmRanges>
+						<CriticalRange minInclusive="0" maxInclusive="40"/>
+					</StaticAlarmRanges>
+				</DefaultAlarm>	
+			</FloatParameterType>
+			<BooleanParameterType name="bool_t">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="8" />
+			</BooleanParameterType>
+			<AggregateParameterType name="vec3_t">
+				<MemberList>
+					<Member name="x" typeRef="float_t" />
+					<Member name="y" typeRef="float_t" />
+					<Member name="z" typeRef="float_t" />
+				</MemberList>
+			</AggregateParameterType>
+			<EnumeratedParameterType name="EnumerationTest">
+				<UnitSet />
+				<IntegerDataEncoding sizeInBits="3" />
+				<EnumerationList>
+					<Enumeration value="0" label="ENUM_VALUE_0" />
+					<Enumeration value="1" label="ENUM_VALUE_1" />
+					<Enumeration value="2" label="ENUM_VALUE_2" />
+					<Enumeration value="3" label="ENUM_VALUE_3" />
+					<Enumeration value="4" label="ENUM_VALUE_4" />
+					<Enumeration value="5" label="ENUM_VALUE_5" />
+					<Enumeration value="6" label="ENUM_VALUE_6" />
+					<Enumeration value="7" label="ENUM_VALUE_7" />
+				</EnumerationList>
+			</EnumeratedParameterType>
+		</ParameterTypeSet>
+		<ParameterSet>
+			<Parameter name="CCSDS_Packet_ID" parameterTypeRef="CCSDS_Packet_ID_Type" />
+			<Parameter name="CCSDS_Packet_Sequence" parameterTypeRef="CCSDS_Packet_Sequence_Type" />
+			<Parameter name="CCSDS_Packet_Length" parameterTypeRef="CCSDS_Packet_Length_Type" />
+			<Parameter name="T_liq" parameterTypeRef="float_T_liq" shortDescription="CHT8305C, 2 Hz" />
+			<Parameter name="p_box" parameterTypeRef="float_p_box" shortDescription="BME280, 2 Hz" />
+			<Parameter name="RH_box" parameterTypeRef="float_RH_box" shortDescription="BME280, 2 Hz"/>
+			<Parameter name="T_box" parameterTypeRef="float_T_box" shortDescription="BME280, 2 Hz"/>
+			<Parameter name="H_2" parameterTypeRef="float_H_2" shortDescription="MQ‑8, 2 Hz"/>
+			<Parameter name="a_x" parameterTypeRef="float_a_x" shortDescription="LSM6DSOX, 10 Hz"/>
+			<Parameter name="a_y" parameterTypeRef="float_a_y" shortDescription="LSM6DSOX, 10 Hz"/>
+			<Parameter name="a_z" parameterTypeRef="float_a_z" shortDescription="LSM6DSOX, 10 Hz"/>
+			<Parameter name="g_x" parameterTypeRef="float_g_x" shortDescription="LSM6DSOX derived, 10 Hz"/>
+			<Parameter name="g_y" parameterTypeRef="float_g_y" shortDescription="LSM6DSOX derived, 10 Hz"/>
+			<Parameter name="g_z" parameterTypeRef="float_g_z" shortDescription="LSM6DSOX derived, 10 Hz"/>
+			<Parameter name="I_E1" parameterTypeRef="float_I_E1" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_E2" parameterTypeRef="float_I_E2" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_E3" parameterTypeRef="float_I_E3" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_E4" parameterTypeRef="float_I_E4" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_C1" parameterTypeRef="float_I_C1" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_C2" parameterTypeRef="float_I_C2" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_C3" parameterTypeRef="float_I_C3" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="I_C4" parameterTypeRef="float_I_C4" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_E1" parameterTypeRef="float_V_E1" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_E2" parameterTypeRef="float_V_E2" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_E3" parameterTypeRef="float_V_E3" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_E4" parameterTypeRef="float_V_E4" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_C1" parameterTypeRef="float_V_C1" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_C2" parameterTypeRef="float_V_C2" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_C3" parameterTypeRef="float_V_C3" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="V_C4" parameterTypeRef="float_V_C4" shortDescription="INA219, 10 Hz"/>
+			<Parameter name="Parabola_phase" parameterTypeRef="float_t" shortDescription="Eng. Parabola phase"/>
+			<Parameter name="g_force" parameterTypeRef="float_t" shortDescription="Eng. G force"/>
+		</ParameterSet>
+		<ContainerSet>
+			<SequenceContainer abstract="true" name="CCSDSPacket">
+				<EntryList>
+					<ParameterRefEntry parameterRef="CCSDS_Packet_ID" />
+					<ParameterRefEntry parameterRef="CCSDS_Packet_Sequence" />
+					<ParameterRefEntry parameterRef="CCSDS_Packet_Length" />
+				</EntryList>
+			</SequenceContainer>
+			<SequenceContainer name="TelemetryPacket">
+				<EntryList />
+				<BaseContainer containerRef="CCSDSPacket">
+					<RestrictionCriteria>
+						<ComparisonList>
+							<Comparison value="0" parameterRef="CCSDS_Packet_ID/Version" />
+							<Comparison value="TM" parameterRef="CCSDS_Packet_ID/Type" />
+						</ComparisonList>
+					</RestrictionCriteria>
+				</BaseContainer>
+			</SequenceContainer>
+			<SequenceContainer name="Spacecraft">
+				<EntryList>
+					<ParameterRefEntry parameterRef="T_liq" />
+					<ParameterRefEntry parameterRef="p_box" />
+					<ParameterRefEntry parameterRef="RH_box" />
+					<ParameterRefEntry parameterRef="T_box" />
+					<ParameterRefEntry parameterRef="H_2" />
+					<ParameterRefEntry parameterRef="a_x" />
+					<ParameterRefEntry parameterRef="a_y" />
+					<ParameterRefEntry parameterRef="a_z" />
+					<ParameterRefEntry parameterRef="g_x" />
+					<ParameterRefEntry parameterRef="g_y" />
+					<ParameterRefEntry parameterRef="g_z" />
+					<ParameterRefEntry parameterRef="g_force" />	
+					<ParameterRefEntry parameterRef="Parabola_phase" />	
+					<ParameterRefEntry parameterRef="I_E1" />
+					<ParameterRefEntry parameterRef="I_E2" />
+					<ParameterRefEntry parameterRef="I_E3" />
+					<ParameterRefEntry parameterRef="I_E4" />
+					<ParameterRefEntry parameterRef="I_C1" />
+					<ParameterRefEntry parameterRef="I_C2" />
+					<ParameterRefEntry parameterRef="I_C3" />
+					<ParameterRefEntry parameterRef="I_C4" />
+					<ParameterRefEntry parameterRef="V_E1" />
+					<ParameterRefEntry parameterRef="V_E2" />
+					<ParameterRefEntry parameterRef="V_E3" />
+					<ParameterRefEntry parameterRef="V_E4" />
+					<ParameterRefEntry parameterRef="V_C1" />
+					<ParameterRefEntry parameterRef="V_C2" />
+					<ParameterRefEntry parameterRef="V_C3" />
+					<ParameterRefEntry parameterRef="V_C4" />
+				</EntryList>
+				<BaseContainer containerRef="TelemetryPacket">
+					<RestrictionCriteria>
+						<ComparisonList>
+							<Comparison value="NotPresent" parameterRef="CCSDS_Packet_ID/SecHdrFlag" />
+							<Comparison value="100" parameterRef="CCSDS_Packet_ID/APID" />
+						</ComparisonList>
+					</RestrictionCriteria>
+				</BaseContainer>
+			</SequenceContainer>
+		</ContainerSet>
+	</TelemetryMetaData>
+</SpaceSystem>
