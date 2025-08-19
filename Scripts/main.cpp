@@ -198,7 +198,8 @@ void sendSensorData()
 
 void setup()
 {
-  Serial.begin(9600);
+  // Increase serial communication speed for faster data transfer
+  Serial.begin(115200);
   while(!Serial){}
   delay(200);
 
