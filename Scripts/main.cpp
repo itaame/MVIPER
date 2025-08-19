@@ -69,6 +69,7 @@ volatile float boxHum;
 IntervalTimerEx mhdTimer;
 IntervalTimerEx sensorTimer;
 IntervalTimerEx currentSensorTimer;
+IntervalTimerEx sendDataTimer;
 
 void readSensors()
 {
@@ -225,12 +226,13 @@ void setup()
   mhdTimer.begin([] {generalTeensy.setMHDmode(); }, generalTeensy.intervalEnableMHD);
   sensorTimer.begin([] {readSensors(); }, sensorReadInterval);
   currentSensorTimer.begin([] {readCurrent(); }, currentReadInterval);
+  sendDataTimer.begin([] {sendSensorData(); }, currentReadInterval);
 
 }
 
 void loop()
 {
-  sendSensorData();
-  delay(1000);
+  // Main loop intentionally left light; data transmission is handled by timer.
+  delay(1);
 }
 
