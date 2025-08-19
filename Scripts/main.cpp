@@ -67,6 +67,7 @@ volatile float boxHum;
 IntervalTimerEx mhdTimer;
 IntervalTimerEx sensorTimer;
 IntervalTimerEx currentSensorTimer;
+IntervalTimerEx sendTimer;
 
 void readSensors() {
   sensors_event_t accel;
@@ -216,9 +217,9 @@ void setup() {
                  generalTeensy.intervalEnableMHD);
   sensorTimer.begin([] { readSensors(); }, sensorReadInterval);
   currentSensorTimer.begin([] { readCurrent(); }, currentReadInterval);
+  sendTimer.begin([] { sendSensorData(); }, sensorReadInterval);
 }
 
 void loop() {
-  sendSensorData();
-  delay(1000);
+  delay(1);
 }
