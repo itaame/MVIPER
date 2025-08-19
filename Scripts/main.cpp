@@ -1,18 +1,17 @@
-#include <Arduino.h>
-#include <imxrt.h>
-#include <IntervalTimerEx.h>
-#include <IntervalTimer.h>
-#include <TimeLib.h>
-#include <Adafruit_LSM6DSOX.h>
-#include <Adafruit_INA219.h>
-#include <Adafruit_BME280.h>
-#include <Adafruit_MCP9808.h>
-#include "TeenGen.h"
 #include "MQ8.h"
-//#include <OneWire.h>
-//#include <DallasTemperature.h>
+#include "TeenGen.h"
+#include <Adafruit_BME280.h>
+#include <Adafruit_INA219.h>
+#include <Adafruit_LSM6DSOX.h>
+#include <Adafruit_MCP9808.h>
+#include <Arduino.h>
+#include <IntervalTimer.h>
+#include <IntervalTimerEx.h>
+#include <TimeLib.h>
+#include <imxrt.h>
+// #include <OneWire.h>
+// #include <DallasTemperature.h>
 #include "WireIMXRT.h"
-
 
 #define ONE_WIRE_BUS 0
 #define SEALEVELPRESSURE_HPA (1013.25)
@@ -29,7 +28,6 @@
 #define mcp3Address
 #define mcp4Address
 
-
 MQ8 hSensor;
 TeenGen generalTeensy = TeenGen();
 Adafruit_LSM6DSOX sox;
@@ -42,10 +40,10 @@ Adafruit_INA219 ina1 = Adafruit_INA219(ina1Address);
 Adafruit_INA219 ina2 = Adafruit_INA219(ina2Address);
 Adafruit_INA219 ina3 = Adafruit_INA219(ina3Address);
 Adafruit_INA219 ina4 = Adafruit_INA219(ina4Address);
-//OneWire oneWire(ONE_WIRE_BUS);
-//DallasTemperature tempSensors(&oneWire);
+// OneWire oneWire(ONE_WIRE_BUS);
+// DallasTemperature tempSensors(&oneWire);
 int sensorReadInterval = 1000000; // 100 Hz
-int currentReadInterval = 10000; //10 KHz
+int currentReadInterval = 10000;  // 10 KHz
 int ACS_VpA = 185;
 int ACS_zero = 2500;
 int ACS_value1, ACS_value2, ACS_value3, ACS_value4 = 0;
@@ -70,33 +68,31 @@ IntervalTimerEx mhdTimer;
 IntervalTimerEx sensorTimer;
 IntervalTimerEx currentSensorTimer;
 
-void readSensors()
-{
+void readSensors() {
   sensors_event_t accel;
   sensors_event_t gyro;
   sensors_event_t temp;
-  
+
   timestamp_general = now();
 
-  //Read IMU
+  // Read IMU
   sox.getEvent(&accel, &gyro, &temp);
-  accelX       = accel.acceleration.x;
-  accelY       = accel.acceleration.y;
-  accelZ       = accel.acceleration.z;
-  gyroX        = gyro.gyro.x;
-  gyroY        = gyro.gyro.y;
-  gyroZ        = gyro.gyro.z;
-  
+  accelX = accel.acceleration.x;
+  accelY = accel.acceleration.y;
+  accelZ = accel.acceleration.z;
+  gyroX = gyro.gyro.x;
+  gyroY = gyro.gyro.y;
+  gyroZ = gyro.gyro.z;
 
-  //Read hydrogen sensor
+  // Read hydrogen sensor
   hydrogenVoltage = hSensor.readSensor();
 
-  //Read Zarges box temperature & humidity
+  // Read Zarges box temperature & humidity
   boxTemp = bme.readTemperature();
   boxPres = bme.readPressure() / 100.0F;
   boxHum = bme.readHumidity();
 
-  //Read coil temperature with I2C Sensor
+  // Read coil temperature with I2C Sensor
   coilTemp[0] = mcp1.readTempC();
   coilTemp[1] = mcp2.readTempC();
   coilTemp[2] = mcp3.readTempC();
@@ -104,7 +100,7 @@ void readSensors()
 
   /*
   //Read coil temperature with One Wire Sensor
-  tempSensors.requestTemperatures(); 
+  tempSensors.requestTemperatures();
   for(int i=0; i<4; i++)
   {
     coilTemp[i] = tempSensors.getTempCByIndex(i);
@@ -112,11 +108,10 @@ void readSensors()
     */
 }
 
-void readCurrent()
-{
+void readCurrent() {
   timestamp_current = now();
 
-  //INAS
+  // INAS
   currentE1 = ina1.getCurrent_mA();
   busvoltage1 = ina1.getBusVoltage_V();
   shuntvoltage1 = ina1.getShuntVoltage_mV();
@@ -137,69 +132,64 @@ void readCurrent()
   shuntvoltage4 = ina4.getShuntVoltage_mV();
   voltageE4 = busvoltage4 + (shuntvoltage4 / 1000);
 
-  //ACS
+  // ACS
   ACS_value1 = analogRead(pinACS1);
-  ACS_voltage1 = (ACS_value1 /1024.0) * 5000;
+  ACS_voltage1 = (ACS_value1 / 1024.0) * 5000;
   currentM1 = ((ACS_voltage1 - ACS_zero) / ACS_VpA);
 
   ACS_value2 = analogRead(pinACS2);
-  ACS_voltage2 = (ACS_value2 /1024.0) * 5000;
+  ACS_voltage2 = (ACS_value2 / 1024.0) * 5000;
   currentM2 = ((ACS_voltage2 - ACS_zero) / ACS_VpA);
 
   ACS_value3 = analogRead(pinACS3);
-  ACS_voltage3 = (ACS_value3 /1024.0) * 5000;
+  ACS_voltage3 = (ACS_value3 / 1024.0) * 5000;
   currentM3 = ((ACS_voltage3 - ACS_zero) / ACS_VpA);
 
   ACS_value4 = analogRead(pinACS4);
-  ACS_voltage4 = (ACS_value4 /1024.0) * 5000;
+  ACS_voltage4 = (ACS_value4 / 1024.0) * 5000;
   currentM4 = ((ACS_voltage4 - ACS_zero) / ACS_VpA);
 }
 
-void sendSensorData()
-{
-  int cTimestamp;
-  float cAccelX, cAccelY, cAccelZ;
-  float cGyroX, cGyroY, cGyroZ;
-  float cBoxTemp, cBoxPres, cBoxHum;
-  float cCurrentE1, cVoltageE1;
-  float cHydrogen;
+void sendSensorData() {
+  struct __attribute__((packed)) SensorPacket {
+    int32_t timestamp;
+    float accelX;
+    float accelY;
+    float accelZ;
+    float gyroX;
+    float gyroY;
+    float gyroZ;
+    float boxTemp;
+    float boxPres;
+    float boxHum;
+    float currentE1;
+    float voltageE1;
+    float hydrogen;
+  } packet;
 
   noInterrupts();
-  cTimestamp = timestamp_general;
-  cAccelX = accelX;
-  cAccelY = accelY;
-  cAccelZ = accelZ;
-  cGyroX = gyroX;
-  cGyroY = gyroY;
-  cGyroZ = gyroZ;
-  cBoxTemp = boxTemp;
-  cBoxPres = boxPres;
-  cBoxHum = boxHum;
-  cCurrentE1 = currentE1;
-  cVoltageE1 = voltageE1;
-  cHydrogen = hydrogenVoltage;
+  packet.timestamp = timestamp_general;
+  packet.accelX = accelX;
+  packet.accelY = accelY;
+  packet.accelZ = accelZ;
+  packet.gyroX = gyroX;
+  packet.gyroY = gyroY;
+  packet.gyroZ = gyroZ;
+  packet.boxTemp = boxTemp;
+  packet.boxPres = boxPres;
+  packet.boxHum = boxHum;
+  packet.currentE1 = currentE1;
+  packet.voltageE1 = voltageE1;
+  packet.hydrogen = hydrogenVoltage;
   interrupts();
 
-  Serial.print(cTimestamp); Serial.print(",");
-  Serial.print(cAccelX);  Serial.print(",");
-  Serial.print(cAccelY);  Serial.print(",");
-  Serial.print(cAccelZ);  Serial.print(",");
-  Serial.print(cGyroX);   Serial.print(",");
-  Serial.print(cGyroY);   Serial.print(",");
-  Serial.print(cGyroZ);   Serial.print(",");
-  Serial.print(cBoxTemp); Serial.print(",");
-  Serial.print(cBoxPres); Serial.print(",");
-  Serial.print(cBoxHum);  Serial.print(",");
-  Serial.print(cCurrentE1); Serial.print(",");
-  Serial.print(cVoltageE1); Serial.print(",");
-  Serial.print(cHydrogen);
-  Serial.println();
+  Serial.write(reinterpret_cast<uint8_t *>(&packet), sizeof(packet));
 }
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
-  while(!Serial){}
+  while (!Serial) {
+  }
   delay(200);
 
   ina1.begin();
@@ -210,27 +200,25 @@ void setup()
   mcp2.begin(mcp2Address);
   mcp3.begin(mcp3Address);
   mcp4.begin(mcp4Address);
-  mcp1.setResolution(0); //0.5°C Resolution
-  mcp2.setResolution(0); //0.5°C Resolution
-  mcp3.setResolution(0); //0.5°C Resolution
-  mcp4.setResolution(0); //0.5°C Resolution
+  mcp1.setResolution(0); // 0.5°C Resolution
+  mcp2.setResolution(0); // 0.5°C Resolution
+  mcp3.setResolution(0); // 0.5°C Resolution
+  mcp4.setResolution(0); // 0.5°C Resolution
   mcp1.wake();
   mcp2.wake();
   mcp3.wake();
   mcp4.wake();
-  //tempSensors.begin();
+  // tempSensors.begin();
   sox.begin_I2C();
   bme.begin();
 
-  mhdTimer.begin([] {generalTeensy.setMHDmode(); }, generalTeensy.intervalEnableMHD);
-  sensorTimer.begin([] {readSensors(); }, sensorReadInterval);
-  currentSensorTimer.begin([] {readCurrent(); }, currentReadInterval);
-
+  mhdTimer.begin([] { generalTeensy.setMHDmode(); },
+                 generalTeensy.intervalEnableMHD);
+  sensorTimer.begin([] { readSensors(); }, sensorReadInterval);
+  currentSensorTimer.begin([] { readCurrent(); }, currentReadInterval);
 }
 
-void loop()
-{
+void loop() {
   sendSensorData();
   delay(1000);
 }
-
