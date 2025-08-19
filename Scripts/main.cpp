@@ -155,11 +155,52 @@ void readCurrent()
   currentM4 = ((ACS_voltage4 - ACS_zero) / ACS_VpA);
 }
 
+void sendSensorData()
+{
+  int cTimestamp;
+  float cAccelX, cAccelY, cAccelZ;
+  float cGyroX, cGyroY, cGyroZ;
+  float cBoxTemp, cBoxPres, cBoxHum;
+  float cCurrentE1, cVoltageE1;
+  float cHydrogen;
+
+  noInterrupts();
+  cTimestamp = timestamp_general;
+  cAccelX = accelX;
+  cAccelY = accelY;
+  cAccelZ = accelZ;
+  cGyroX = gyroX;
+  cGyroY = gyroY;
+  cGyroZ = gyroZ;
+  cBoxTemp = boxTemp;
+  cBoxPres = boxPres;
+  cBoxHum = boxHum;
+  cCurrentE1 = currentE1;
+  cVoltageE1 = voltageE1;
+  cHydrogen = hydrogenVoltage;
+  interrupts();
+
+  Serial.print(cTimestamp); Serial.print(",");
+  Serial.print(cAccelX);  Serial.print(",");
+  Serial.print(cAccelY);  Serial.print(",");
+  Serial.print(cAccelZ);  Serial.print(",");
+  Serial.print(cGyroX);   Serial.print(",");
+  Serial.print(cGyroY);   Serial.print(",");
+  Serial.print(cGyroZ);   Serial.print(",");
+  Serial.print(cBoxTemp); Serial.print(",");
+  Serial.print(cBoxPres); Serial.print(",");
+  Serial.print(cBoxHum);  Serial.print(",");
+  Serial.print(cCurrentE1); Serial.print(",");
+  Serial.print(cVoltageE1); Serial.print(",");
+  Serial.print(cHydrogen);
+  Serial.println();
+}
+
 void setup()
 {
-  //Serial.begin(9600);
-  //while(!Serial){}
-  //delay(200);
+  Serial.begin(9600);
+  while(!Serial){}
+  delay(200);
 
   ina1.begin();
   ina2.begin();
@@ -184,151 +225,12 @@ void setup()
   mhdTimer.begin([] {generalTeensy.setMHDmode(); }, generalTeensy.intervalEnableMHD);
   sensorTimer.begin([] {readSensors(); }, sensorReadInterval);
   currentSensorTimer.begin([] {readCurrent(); }, currentReadInterval);
-  
-}
 
-  float caccelX = 0;
-  float caccelY = 0;
-  float caccelZ = 0;
-  float cboxTemp = 0;
-  float cboxPres = 0;
-  float cboxHum = 0;
-  float ccurrentE1 = 0;
-  float cvoltageE1 = 0;
-  float ccurrentE2 = 0;
-  float cvoltageE2 = 0;
-  float ccurrentE3 = 0;
-  float cvoltageE3 = 0;
-  float ccurrentE4 = 0;
-  float cvoltageE4 = 0;
-  float ccurrentM1 = 0;
-  float ccurrentM2 = 0;
-  float ccurrentM3 = 0;
-  float ccurrentM4 = 0;
-  float cHyd = 0;
-  float cTemp1 = 0;
-  float cTemp2 = 0;
-  float cTemp3 = 0;
-  float cTemp4 = 0;
+}
 
 void loop()
 {
-  
-  /*
-  Serial.print("MHD Mode = ");
-  Serial.print(generalTeensy.signalOut);
-  Serial.print("\n");  
-  Serial.print("BI Mode = ");
-  Serial.print(generalTeensy.stateBI);
-  Serial.print("\n");  
-
-  caccelX = 0;
-  caccelY = 0;
-  caccelZ = 0;
-  cboxTemp = 0;
-  cboxPres = 0;
-  cboxHum = 0;
-  ccurrentE1 = 0;
-  cvoltageE1 = 0;
-  ccurrentE2 = 0;
-  cvoltageE2 = 0;
-  ccurrentE3 = 0;
-  cvoltageE3 = 0;
-  ccurrentE4 = 0;
-  cvoltageE4 = 0;
-  cHyd = 0;
-  cTemp1 = 0;
-  cTemp2 = 0;
-  cTemp3 = 0;
-  cTemp4 = 0;
-  ccurrentM1 =  0;
-  ccurrentM2 =  0;
-  ccurrentM3 =  0;
-  ccurrentM4 =  0;
-  delay(200);
-  
-  noInterrupts();
-  caccelX = accelX;
-  caccelY = accelY;
-  caccelZ = accelZ;
-  cboxTemp = boxTemp;
-  cboxPres = boxPres;
-  cboxHum = boxHum;
-  ccurrentE1 = currentE1;
-  cvoltageE1 = voltageE1;
-  ccurrentE2 = currentE2;
-  cvoltageE2 = voltageE2;
-  ccurrentE3 = currentE3;
-  cvoltageE3 = voltageE3;
-  ccurrentE4 = currentE3;
-  cvoltageE4 = voltageE3;
-  ccurrentM1 =  currentM1;
-  ccurrentM2 =  currentM2;
-  ccurrentM3 =  currentM3;
-  ccurrentM4 =  currentM4;
-  cHyd = hydrogenVoltage;
-  cTemp1 = coilTemp[0];
-  interrupts();
-
-  Serial.print("Current E1= ");
-  Serial.print(ccurrentE1);
-  Serial.print(" Voltage E1= ");
-  Serial.print(cvoltageE1);
-  Serial.print("\n");
-  Serial.print("Current E2= ");
-  Serial.print(ccurrentE2);
-  Serial.print(" Voltage E2= ");
-  Serial.print(cvoltageE2);
-  Serial.print("\n");
-  Serial.print("Current E3= ");
-  Serial.print(ccurrentE3);
-  Serial.print(" Voltage E3= ");
-  Serial.print(cvoltageE3);
-  Serial.print("\n");
-  Serial.print("Current E4= ");
-  Serial.print(ccurrentE4);
-  Serial.print(" Voltage E4= ");
-  Serial.print(cvoltageE4);
-  Serial.print("\n");
-
-  Serial.print("Current M1 = ");
-  Serial.print(ccurrentE1);
-  Serial.print(" Current M2 = ");
-  Serial.print(ccurrentE2);
-  Serial.print(" Current M3 = ");
-  Serial.print(ccurrentE3);
-  Serial.print(" Current M4 = ");
-  Serial.print(ccurrentE4);
-  Serial.print("\n");
-  
-
-  
-  Serial.print("acelX = ");
-  Serial.print(caccelX);
-  Serial.print(" acelY = ");
-  Serial.print(caccelY);
-  Serial.print(" acelZ = ");
-  Serial.print(caccelZ);
-  Serial.print("\n");
-
-  Serial.print("Temp = ");
-  Serial.print(cboxTemp);
-  Serial.print(" Pressure = ");
-  Serial.print(cboxPres);
-  Serial.print(" Humidity = ");
-  Serial.print(cboxHum);
-  Serial.print("\n");
-  
-  Serial.print("CoilTemp1 = ");
-  Serial.print(cTemp1);
-  Serial.print("\n");
-  
-  Serial.print("Hydrogen voltage = ");
-  Serial.print(cHyd);
-  Serial.print("\n");
-  Serial.print("\n");
-  delay(2000);
-  
-  */
+  sendSensorData();
+  delay(1000);
 }
 
