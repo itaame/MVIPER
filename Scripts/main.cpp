@@ -182,6 +182,17 @@ void sendSensorData() {
   interrupts();
 
   Serial.write(reinterpret_cast<uint8_t *>(&packet), sizeof(packet));
+
+  static uint32_t txCount = 0;
+  static uint32_t lastPrint = micros();
+  txCount++;
+  uint32_t now = micros();
+  if (now - lastPrint >= 1000000) {
+    float freq = (txCount * 1000000.0f) / (now - lastPrint);
+    Serial.printf("TX freq: %.2f Hz\n", freq);
+    txCount = 0;
+    lastPrint = now;
+  }
 }
 
 void setup() {
