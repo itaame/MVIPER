@@ -20,7 +20,9 @@ if __name__ == "__main__":
         description="Receive and print sensor data from serial port"
     )
     parser.add_argument("--port", default="/dev/ttyACM0", help="Serial port to open")
-    parser.add_argument("--baudrate", type=int, default=9600, help="Baud rate for the serial connection")
+    parser.add_argument(
+        "--baudrate", type=int, default=5000000, help="Baud rate for the serial connection"
+    )
     parser.add_argument(
         "--frame-size", type=int, default=64, help="Number of bytes to read per frame"
     )

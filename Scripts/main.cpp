@@ -188,7 +188,8 @@ void sendSensorData() {
 }
 
 void setup() {
-  Serial.begin(9600);
+  // Configure serial port for high-speed telemetry (5 Mbps)
+  Serial.begin(5000000);
   while (!Serial) {
   }
   delay(200);
