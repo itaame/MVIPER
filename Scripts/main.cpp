@@ -43,7 +43,7 @@ Adafruit_INA219 ina4 = Adafruit_INA219(ina4Address);
 // OneWire oneWire(ONE_WIRE_BUS);
 // DallasTemperature tempSensors(&oneWire);
 int sensorReadInterval = 1000000; // 100 Hz
-int currentReadInterval = 10000;  // 10 KHz
+int currentReadInterval = 100;    // 10 kHz (100 µs)
 int ACS_VpA = 185;
 int ACS_zero = 2500;
 int ACS_value1, ACS_value2, ACS_value3, ACS_value4 = 0;
@@ -161,12 +161,12 @@ void sendSensorData() {
     float gyroY;
     float gyroZ;
     float boxTemp;
-    float boxPres;
-    float boxHum;
     float currentE1;
-    float voltageE1;
     float hydrogen;
-  } packet;
+  };
+  static_assert(sizeof(SensorPacket) <= 50,
+                "Packet must be <=50 bytes for 100µs interval at 5 Mbps");
+  SensorPacket packet;
 
   noInterrupts();
   packet.timestamp = timestamp_general;
@@ -177,10 +177,7 @@ void sendSensorData() {
   packet.gyroY = gyroY;
   packet.gyroZ = gyroZ;
   packet.boxTemp = boxTemp;
-  packet.boxPres = boxPres;
-  packet.boxHum = boxHum;
   packet.currentE1 = currentE1;
-  packet.voltageE1 = voltageE1;
   packet.hydrogen = hydrogenVoltage;
   interrupts();
 
@@ -218,7 +215,7 @@ void setup() {
                  generalTeensy.intervalEnableMHD);
   sensorTimer.begin([] { readSensors(); }, sensorReadInterval);
   currentSensorTimer.begin([] { readCurrent(); }, currentReadInterval);
-  sendTimer.begin([] { sendSensorData(); }, sensorReadInterval);
+  sendTimer.begin([] { sendSensorData(); }, currentReadInterval);
 }
 
 void loop() {
