@@ -51,6 +51,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Receive and decode sensor data from serial port",
     )
+
     parser.add_argument(
         "--port", default="COM3", help="Serial port to open (default: COM3)",
     )
