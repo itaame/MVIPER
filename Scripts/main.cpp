@@ -151,7 +151,10 @@ void readCurrent() {
   currentM4 = ((ACS_voltage4 - ACS_zero) / ACS_VpA);
 }
 
+#define SERIAL_MONITOR_MODE // Comment out to transmit binary packets
+
 void sendSensorData() {
+#ifndef SERIAL_MONITOR_MODE
   struct __attribute__((packed)) SensorPacket {
     int32_t timestamp;
     float accelX;
@@ -182,7 +185,7 @@ void sendSensorData() {
   interrupts();
 
   Serial.write(reinterpret_cast<uint8_t *>(&packet), sizeof(packet));
-
+#else
   static uint32_t txCount = 0;
   static uint32_t lastPrint = micros();
   txCount++;
@@ -193,6 +196,7 @@ void sendSensorData() {
     txCount = 0;
     lastPrint = now;
   }
+#endif
 }
 
 void setup() {
