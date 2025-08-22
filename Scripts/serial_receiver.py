@@ -29,7 +29,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Receive and print sensor data from serial port"
     )
-    parser.add_argument("--port", default="/dev/ttyACM0", help="Serial port to open")
+    parser.add_argument(
+        "--port",
+        default="COM3",
+        help="Serial port to open (default: COM3)",
+    )
     parser.add_argument(
         "--baudrate", type=int, default=5000000, help="Baud rate for the serial connection"
     )
