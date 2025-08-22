@@ -2,33 +2,43 @@
 
 import argparse
 import time
-
-import serial
+from typing import Optional
 
 
 def main(port: str, baudrate: int) -> None:
-    with serial.Serial(port, baudrate, timeout=1) as ser:
-        last_time = None
-        try:
-            while True:
-                line = ser.readline()
-                if not line:
-                    continue
-                now = time.perf_counter()
-                if last_time is None:
-                    freq = float("inf")
-                else:
-                    freq = 1.0 / (now - last_time)
-                last_time = now
+    try:
+        import serial
+    except ModuleNotFoundError as exc:  # pragma: no cover - import is small
+        raise SystemExit(
+            "PySerial is required to run this script. Install it with 'pip install pyserial'."
+        ) from exc
 
-                try:
-                    payload = line.decode().strip()
-                except UnicodeDecodeError:
-                    continue
+    try:
+        with serial.Serial(port, baudrate, timeout=1) as ser:
+            last_time: Optional[float] = None
+            try:
+                while True:
+                    line = ser.readline()
+                    if not line:
+                        continue
+                    now = time.perf_counter()
+                    if last_time is None:
+                        freq = float("inf")
+                    else:
+                        delta = now - last_time
+                        freq = float("inf") if delta == 0 else 1.0 / delta
+                    last_time = now
 
-                print(f"{payload} @ {freq:.1f} Hz")
-        except KeyboardInterrupt:
-            pass
+                    try:
+                        payload = line.decode().strip()
+                    except UnicodeDecodeError:
+                        continue
+
+                    print(f"{payload} @ {freq:.1f} Hz")
+            except KeyboardInterrupt:
+                pass
+    except serial.SerialException as exc:
+        raise SystemExit(f"Failed to open serial port {port}: {exc}") from exc
 
 
 if __name__ == "__main__":
