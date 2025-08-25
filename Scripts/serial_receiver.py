@@ -1,4 +1,4 @@
-"""Simple serial receiver that prints incoming lines and their frequency.
+"""Simple serial receiver that forwards incoming lines as UDP packets.
 
 This version is tailored for the Teensy firmware that streams comma-separated
 sensor values at 10 kHz.  Each line contains the following fields:
@@ -10,13 +10,15 @@ currentE1, voltageE1, currentE2, voltageE2, currentE3, voltageE3, currentE4,
 voltageE4, currentM1, currentM2, currentM3, currentM4, timestamp_current
 ```
 
-The script decodes the line into a dictionary and prints it alongside the
-observed line frequency.
+The script decodes each line into floats, packages them with a CCSDS-like
+header, and sends the result via UDP.
 """
 
 import argparse
+import socket
+import struct
 import time
-from typing import Dict, List, Optional
+from typing import List, Optional
 
 
 # Order of fields in the comma-separated payload emitted by the firmware
@@ -52,6 +54,25 @@ FIELDS: List[str] = [
 ]
 
 
+TM_SEND_ADDRESS = "127.0.0.1"
+TM_SEND_PORT = 10015
+
+
+def header(seq_count: int, apid: int, data_len: int) -> bytes:
+    if seq_count >= 16382:
+        seq_count = 0
+    ccsds_len = data_len + 5
+    return (
+        apid.to_bytes(2, "big")
+        + (49152 + seq_count).to_bytes(2, "big")
+        + ccsds_len.to_bytes(2, "big")
+    )
+
+
+def floats_to_be(*values: float) -> bytes:
+    return b"".join(struct.pack(">f", v) for v in values)
+
+
 def main(port: str, baudrate: int) -> None:
     try:
         import serial
@@ -60,6 +81,8 @@ def main(port: str, baudrate: int) -> None:
             "PySerial is required to run this script. Install it with 'pip install pyserial'."
         ) from exc
 
+    tm_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    seq = 0
     try:
         with serial.Serial(port, baudrate, timeout=1) as ser:
             last_time: Optional[float] = None
@@ -79,26 +102,28 @@ def main(port: str, baudrate: int) -> None:
                     try:
                         payload = line.decode().strip()
                     except UnicodeDecodeError:
-                        # Skip frames with invalid encoding
                         continue
 
                     parts = payload.split(",")
                     if len(parts) != len(FIELDS):
-                        # Ignore incomplete frames
                         continue
 
                     try:
                         numbers = [float(p) for p in parts]
                     except ValueError:
-                        # Skip frames with invalid numeric data
                         continue
 
-                    data: Dict[str, float] = dict(zip(FIELDS, numbers))
-                    print(f"{data} @ {freq:.1f} Hz")
+                    padded = numbers + [0.0] * (30 - len(numbers))
+                    data_bytes = floats_to_be(*padded)
+                    pkt = header(seq, apid=0x64, data_len=len(data_bytes)) + data_bytes
+                    tm_socket.sendto(pkt, (TM_SEND_ADDRESS, TM_SEND_PORT))
+                    seq += 1
             except KeyboardInterrupt:
                 pass
     except serial.SerialException as exc:
         raise SystemExit(f"Failed to open serial port {port}: {exc}") from exc
+    finally:
+        tm_socket.close()
 
 
 if __name__ == "__main__":
